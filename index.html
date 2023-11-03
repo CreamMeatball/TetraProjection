@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetra Projection</title>
+    <script src="js/main.js"></script>
+    <link href="css/button.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- 전체 -->
+    <div id="divCanvas" class="divCanvases" style="position: absolute; left: 10px; top: 10px; border: solid; border-color: black;">
+        <div id="viewOrder" style="position: absolute; left: 50px; top: 40px;">차례 : </div>
+        <div id="colorOrder" style="position: absolute; left: 100px; top: 40px; color: red;">선 ()</div>
+
+        <button class="button" id="button1_1" onclick="button_click(this.id)"></button>
+        <button class="button" id="button1_2" onclick="button_click(this.id)"></button>
+        <button class="button" id="button1_3" onclick="button_click(this.id)"></button>
+        <button class="button" id="button1_4" onclick="button_click(this.id)"></button>
+        <button class="button" id="button1_5" onclick="button_click(this.id)"></button>
+        <button class="button" id="button1_6" onclick="button_click(this.id)"></button>
+        <button class="button" id="button1_7" onclick="button_click(this.id)"></button>
+        <button class="button" id="button1_8" onclick="button_click(this.id)"></button>
+
+        <button class="button" id="button2_1" onclick="button_click(this.id)"></button>
+        <button class="button" id="button2_2" onclick="button_click(this.id)"></button>
+        <button class="button" id="button2_3" onclick="button_click(this.id)"></button>
+        <button class="button" id="button2_4" onclick="button_click(this.id)"></button>
+        <button class="button" id="button2_5" onclick="button_click(this.id)"></button>
+        <button class="button" id="button2_6" onclick="button_click(this.id)"></button>
+        <button class="button" id="button2_7" onclick="button_click(this.id)"></button>
+        <button class="button" id="button2_8" onclick="button_click(this.id)"></button>
+
+        <button class="button" id="button3_1" onclick="button_click(this.id)"></button>
+        <button class="button" id="button3_2" onclick="button_click(this.id)"></button>
+        <button class="button" id="button3_3" onclick="button_click(this.id)"></button>
+        <button class="button" id="button3_4" onclick="button_click(this.id)"></button>
+        <button class="button" id="button3_5" onclick="button_click(this.id)"></button>
+        <button class="button" id="button3_6" onclick="button_click(this.id)"></button>
+        <button class="button" id="button3_7" onclick="button_click(this.id)"></button>
+        <button class="button" id="button3_8" onclick="button_click(this.id)"></button>
+
+        <div style="position: absolute; left: 142px; top: 412px; color: white;">Player</div>
+        
+        <canvas id="canvas" width="500" height="440" style="border: solid; border-color: black;"></canvas>
+    </div>
+    <div>
+        <button onclick="undo()" style="position: absolute; left: 10px; top: 470px; font-size:15px; padding: 10px;">되돌리기</button>
+        <input type="text" id="player1" placeholder="선 플레이어" style="position: absolute; width: 100px; left: 170px; top: 470px; font-size:15px; padding: 10px;">
+        <input type="text" id="player2" placeholder="후 플레이어" style="position: absolute; width: 100px; left: 308px; top: 470px; font-size:15px; padding: 10px;">
+        <button onclick="playerSetting()" style="position: absolute; width: 70px; height: 41px; left: 446px; top: 470px; font-size:12px; padding: 10px;">이름 설정</button>
+        <p style="position: absolute; left: 5px; top: 460px; font-size:56px; font-weight: bold; font-style: italic; color: rgb(100, 100, 100);">TETRA PROJECTION</p>
+        <p style="position: absolute; left: 10px; top: 560px; font-size:16px; font-weight: bold; color: rgb(100, 100, 100);">더 브레이니 시즌2 6기 - 23.11.05 데스매치</p>
+        <p style="position: absolute; left: 10px; top: 930px; font-size:16px; font-weight: bold; color: rgb(100, 100, 100);">5기 박철현 제작 / https://github.com/CreamMeatball</p>
+    </div>
+
+    <!-- X -->
+    <div id="divCanvasX" class="divCanvases" style="position: absolute; left: 600px; top: 10px; border: solid; border-color: black;">
+        <div style="position: absolute; left: 50px; top: 25px;">X 좌</div>
+        <button class="button" id="buttonXLeft_1">1</button>
+        <button class="button" id="buttonXLeft_2">2</button>
+        <button class="button" id="buttonXLeft_3">3</button>
+        <button class="button" id="buttonXLeft_4">4</button>
+        <button class="button" id="buttonXLeft_5">5</button>
+        <button class="button" id="buttonXLeft_6">6</button>
+        <button class="button" id="buttonXLeft_7">7</button>
+        <button class="button" id="buttonXLeft_8">8</button>
+        <button class="button" id="buttonXLeft_9">9</button>
+
+        <div style="position: absolute; left: 388px; top: 140px; color: white;">P</div>
+
+        <canvas id="canvasXLeft" width="400" height="300" style="border: solid; border-color: black;"></canvas>
+
+
+        <div style="position: absolute; left: 468px; top: 25px;">X 우</div>
+        <button class="button" id="buttonXRight_1">1</button>
+        <button class="button" id="buttonXRight_2">2</button>
+        <button class="button" id="buttonXRight_3">3</button>
+        <button class="button" id="buttonXRight_4">4</button>
+        <button class="button" id="buttonXRight_5">5</button>
+        <button class="button" id="buttonXRight_6">6</button>
+        <button class="button" id="buttonXRight_7">7</button>
+        <button class="button" id="buttonXRight_8">8</button>
+        <button class="button" id="buttonXRight_9">9</button>
+
+        <div style="position: absolute; left: 458px; top: 140px; color: white;">Player</div>
+
+        <canvas id="canvasXRight" width="400" height="300" style="border: solid; border-color: black;"></canvas>
+    </div>
+
+    <!-- Y -->
+    <div id="divCanvasY" class="divCanvases" style="position: absolute; left: 600px; top: 330px; border: solid; border-color: black;">
+        <div style="position: absolute; left: 50px; top: 25px;">Y 앞</div>
+        <button class="button" id="buttonYFront_1">1</button>
+        <button class="button" id="buttonYFront_2">2</button>
+        <button class="button" id="buttonYFront_3">3</button>
+        <button class="button" id="buttonYFront_4">4</button>
+        <button class="button" id="buttonYFront_5">5</button>
+        <button class="button" id="buttonYFront_6">6</button>
+        <button class="button" id="buttonYFront_7">7</button>
+        <button class="button" id="buttonYFront_8">8</button>
+        <button class="button" id="buttonYFront_9">9</button>
+        <canvas id="canvasYFront" width="400" height="300" style="border: solid; border-color: black;"></canvas>
+
+
+        <div style="position: absolute; left: 468px; top: 25px;">Y 뒤</div>
+        <button class="button" id="buttonYBack_1">1</button>
+        <button class="button" id="buttonYBack_2">2</button>
+        <button class="button" id="buttonYBack_3">3</button>
+        <button class="button" id="buttonYBack_4">4</button>
+        <button class="button" id="buttonYBack_5">5</button>
+        <button class="button" id="buttonYBack_6">6</button>
+        <button class="button" id="buttonYBack_7">7</button>
+        <button class="button" id="buttonYBack_8">8</button>
+        <button class="button" id="buttonYBack_9">9</button>
+        <canvas id="canvasYBack" width="400" height="300" style="border: solid; border-color: black;"></canvas>
+    </div>
+
+    <!-- Z -->
+    <div id="divCanvasZ" class="divCanvases" style="position: absolute; left: 600px; top: 650px; border: solid; border-color: black;">
+        <div style="position: absolute; left: 50px; top: 25px;">Z 상</div>
+        <button class="button" id="buttonZUp_1">1</button>
+        <button class="button" id="buttonZUp_2">2</button>
+        <button class="button" id="buttonZUp_3">3</button>
+        <button class="button" id="buttonZUp_4">4</button>
+        <button class="button" id="buttonZUp_5">5</button>
+        <button class="button" id="buttonZUp_6">6</button>
+        <button class="button" id="buttonZUp_7">7</button>
+        <button class="button" id="buttonZUp_8">8</button>
+
+        <div style="position: absolute; left: 230px; top: 280px; color: white;">Player</div>
+        
+        <canvas id="canvasZUp" width="400" height="300" style="border: solid; border-color: black;"></canvas>
+
+
+        <div style="position: absolute; left: 468px; top: 25px;">Z 하</div>
+        <button class="button" id="buttonZDown_1">1</button>
+        <button class="button" id="buttonZDown_2">2</button>
+        <button class="button" id="buttonZDown_3">3</button>
+        <button class="button" id="buttonZDown_4">4</button>
+        <button class="button" id="buttonZDown_5">5</button>
+        <button class="button" id="buttonZDown_6">6</button>
+        <button class="button" id="buttonZDown_7">7</button>
+        <button class="button" id="buttonZDown_8">8</button>
+
+        <div style="position: absolute; left: 636px; top: 280px; color: white;">Player</div>
+
+        <canvas id="canvasZDown" width="400" height="300" style="border: solid; border-color: black;"></canvas>
+    </div>
+    
+    <script src="js/draw.js"></script>
+    
+</body>
+</html>

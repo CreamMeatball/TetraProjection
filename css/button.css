@@ -1,0 +1,103 @@
+.button { 
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: solid;
+    border-color: black;
+    background-color: rgb(240, 240, 240);
+}
+
+/* 전체 */
+#button1_1 { left: 188px; top: 88px; }
+#button1_2 { left: 288px; top: 88px; }
+#button1_3 { left: 388px; top: 88px; }
+#button1_4 { left: 348px; top: 138px; }
+#button1_5 { left: 308px; top: 188px; }
+#button1_6 { left: 208px; top: 188px; }
+#button1_7 { left: 108px; top: 188px; }
+#button1_8 { left: 148px; top: 138px; }
+
+#button2_1 { left: 188px; top: 168px; }
+#button2_2 { left: 288px; top: 168px; }
+#button2_3 { left: 388px; top: 168px; }
+#button2_4 { left: 348px; top: 218px; }
+#button2_5 { left: 308px; top: 268px; }
+#button2_6 { left: 208px; top: 268px; }
+#button2_7 { left: 108px; top: 268px; }
+#button2_8 { left: 148px; top: 218px; }
+
+#button3_1 { left: 188px; top: 248px; }
+#button3_2 { left: 288px; top: 248px; }
+#button3_3 { left: 388px; top: 248px; }
+#button3_4 { left: 348px; top: 298px; }
+#button3_5 { left: 308px; top: 348px; }
+#button3_6 { left: 208px; top: 348px; }
+#button3_7 { left: 108px; top: 348px; }
+#button3_8 { left: 148px; top: 298px; }
+
+/* X Left */
+#buttonXLeft_1 { left: 138px; top: 38px; }
+#buttonXLeft_2 { left: 238px; top: 38px; }
+#buttonXLeft_3 { left: 338px; top: 38px; }
+#buttonXLeft_4 { left: 338px; top: 138px; }
+#buttonXLeft_5 { left: 338px; top: 238px; }
+#buttonXLeft_6 { left: 238px; top: 238px; }
+#buttonXLeft_7 { left: 138px; top: 238px; }
+#buttonXLeft_8 { left: 138px; top: 138px; }
+#buttonXLeft_9 { left: 238px; top: 138px; }
+
+/* X Right */
+#buttonXRight_1 { left: 546px; top: 38px; }
+#buttonXRight_2 { left: 646px; top: 38px; }
+#buttonXRight_3 { left: 746px; top: 38px; }
+#buttonXRight_4 { left: 746px; top: 138px; }
+#buttonXRight_5 { left: 746px; top: 238px; }
+#buttonXRight_6 { left: 646px; top: 238px; }
+#buttonXRight_7 { left: 546px; top: 238px; }
+#buttonXRight_8 { left: 546px; top: 138px; }
+#buttonXRight_9 { left: 646px; top: 138px; }
+
+/* Y Front */
+#buttonYFront_1 { left: 138px; top: 38px; }
+#buttonYFront_2 { left: 238px; top: 38px; }
+#buttonYFront_3 { left: 338px; top: 38px; }
+#buttonYFront_4 { left: 338px; top: 138px; }
+#buttonYFront_5 { left: 338px; top: 238px; }
+#buttonYFront_6 { left: 238px; top: 238px; }
+#buttonYFront_7 { left: 138px; top: 238px; }
+#buttonYFront_8 { left: 138px; top: 138px; }
+#buttonYFront_9 { left: 238px; top: 138px; }
+
+/* Y Back */
+#buttonYBack_1 { left: 546px; top: 38px; }
+#buttonYBack_2 { left: 646px; top: 38px; }
+#buttonYBack_3 { left: 746px; top: 38px; }
+#buttonYBack_4 { left: 746px; top: 138px; }
+#buttonYBack_5 { left: 746px; top: 238px; }
+#buttonYBack_6 { left: 646px; top: 238px; }
+#buttonYBack_7 { left: 546px; top: 238px; }
+#buttonYBack_8 { left: 546px; top: 138px; }
+#buttonYBack_9 { left: 646px; top: 138px; }
+
+/* Z Up */
+#buttonZUp_1 { left: 138px; top: 38px; }
+#buttonZUp_2 { left: 238px; top: 38px; }
+#buttonZUp_3 { left: 338px; top: 38px; }
+#buttonZUp_4 { left: 338px; top: 138px; }
+#buttonZUp_5 { left: 338px; top: 238px; }
+#buttonZUp_6 { left: 238px; top: 238px; }
+#buttonZUp_7 { left: 138px; top: 238px; }
+#buttonZUp_8 { left: 138px; top: 138px; }
+#buttonZUp_9 { left: 238px; top: 138px; }
+
+/* Z Down */
+#buttonZDown_1 { left: 546px; top: 38px; }
+#buttonZDown_2 { left: 646px; top: 38px; }
+#buttonZDown_3 { left: 746px; top: 38px; }
+#buttonZDown_4 { left: 746px; top: 138px; }
+#buttonZDown_5 { left: 746px; top: 238px; }
+#buttonZDown_6 { left: 646px; top: 238px; }
+#buttonZDown_7 { left: 546px; top: 238px; }
+#buttonZDown_8 { left: 546px; top: 138px; }
+#buttonZDown_9 { left: 646px; top: 138px; }
