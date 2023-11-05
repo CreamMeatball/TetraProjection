@@ -226,7 +226,7 @@ function colorXRight() {
     if (vertex[0][3] == 0) { buttonXRight_2.style.backgroundColor = "red"; } else if (vertex[0][3] == 1) { buttonXRight_2.style.backgroundColor = "blue"; }
 
     // 3
-    if (vertex[0][0] == 0) { buttonXRight_3.style.backgroundColor = "red"; } else if (vertex[0][1] == 1) { buttonXRight_3.style.backgroundColor = "blue"; }
+    if (vertex[0][0] == 0) { buttonXRight_3.style.backgroundColor = "red"; } else if (vertex[0][0] == 1) { buttonXRight_3.style.backgroundColor = "blue"; }
     if (vertex[0][1] == 0) { buttonXRight_3.style.backgroundColor = "red"; } else if (vertex[0][1] == 1) { buttonXRight_3.style.backgroundColor = "blue"; }
     if (vertex[0][2] == 0) { buttonXRight_3.style.backgroundColor = "red"; } else if (vertex[0][2] == 1) { buttonXRight_3.style.backgroundColor = "blue"; }
 
